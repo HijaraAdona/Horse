@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class DemoHorse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the horse's name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter the horse's color: ");
+        String color = scanner.nextLine();
+
+        System.out.print("Enter the horse's birth year: ");
+        int birthYear = scanner.nextInt();
+
+        System.out.print("Enter the number of races the horse has competed in: ");
+        int races = scanner.nextInt();
+
+        RaceHorse DemoHorse = new RaceHorse();
+        DemoHorse.setName(name);
+        DemoHorse.setColor(color);
+        DemoHorse.setYear('y');
+        DemoHorse.setRaces(races);
+
+        System.out.println("My race horse's name is " + DemoHorse.getName());
+        System.out.println("My race horse's color is " + DemoHorse.getColor());
+        System.out.println("My race horse was born in " + DemoHorse.getYear());
+        System.out.println("My race horse has competed in " + DemoHorse.getRaces() + " races.");
+
+        scanner.close();
+    }
+}
